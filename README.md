@@ -1,7 +1,7 @@
 # ParcelPilot AI Agent
 
 ParcelPilot AI Agent is an internal support and operations chatbot designed for authorized ParcelPilot staff. It allows employees to investigate customer issues, answer policy questions using RAG (Retrieval-Augmented Generation), search agreements, look up structured data (orders, accounts, tickets), and prepare state-changing actions safely.
-
+Try it: https://parcelpilot.pythonanywhere.com/
 ## Features
 - **Natural Language Chatbot**: Ask questions naturally.
 - **RAG via BM25**: Retrieves context from PDFs (policies, SOPs, customer agreements) using lightweight lexical search (TF-IDF/BM25).

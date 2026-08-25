@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParcelPilot AI Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ParcelPilot Support AI</h1>
+            <div class="user-selector">
+                <label for="currentUser">Log in as:</label>
+                <select id="currentUser">
+                    <option value="support_agent_1">Support Agent 1 (Access: ACCT-001, ACCT-002)</option>
+                    <option value="support_manager_1">Support Manager 1 (Access: ALL)</option>
+                    <option value="operations_admin">Operations Admin (Access: ALL)</option>
+                </select>
+                <button id="clearChat">Clear Chat</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="chat-container" id="chatBox">
+                <!-- Messages will appear here -->
+                <div class="message assistant">
+                    Hello! I am the ParcelPilot AI Agent. How can I help you today?
+                </div>
+            </div>
+            
+            <div class="tool-activity" id="toolActivity">
+                <h3>Tool Activity</h3>
+                <ul id="toolList"></ul>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="input-group">
+                <input type="text" id="userInput" placeholder="Ask a question or request an action..." autocomplete="off">
+                <button id="sendBtn">Send</button>
+            </div>
+            <div class="suggestions">
+                <span class="suggestion">Can Northstar cancel ORD-1001 without a fee?</span>
+                <span class="suggestion">Show me details for ticket TKT-501.</span>
+                <span class="suggestion">Escalate ticket TKT-501 because of an SLA breach.</span>
+                <span class="suggestion">Are there any urgent or unusual issues that support should know about?</span>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="/static/app.js"></script>
+</body>
+</html>

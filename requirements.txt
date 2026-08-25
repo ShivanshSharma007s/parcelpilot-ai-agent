@@ -1,0 +1,8 @@
+Flask==3.0.3
+groq==0.8.0
+pandas==2.2.2
+openpyxl==3.1.2
+PyMuPDF==1.24.4
+rank-bm25==0.2.2
+scikit-learn==1.5.0
+python-dotenv==1.0.1
